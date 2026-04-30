@@ -1,0 +1,119 @@
+Paso 0 real — Crear el proyecto
+
+Antes de pensar en componentes necesitas:
+
+crear proyecto
+instalar React
+instalar dependencias
+limpiar estructura inicial
+arrancar entorno
+1. Crear proyecto con Vite
+
+Como el ejercicio habla de .env con import.meta.env, lo correcto es usar Vite.
+
+Crea el proyecto así:
+
+npm create vite@latest weather-info
+
+Te preguntará:
+
+framework → React
+variant → JavaScript
+
+Después entra:
+
+cd weather-info
+2. Instalar dependencias
+
+Ahora instala lo básico:
+
+npm install
+
+Esto instala React y todo lo necesario del proyecto.
+
+Importante:
+React no se instala aparte, ya viene al crear el proyecto con Vite.
+
+3. Instalar UUID
+
+El ejercicio te lo pide para las keys:
+
+npm install uuid
+
+Luego lo usarás así:
+
+import { v4 as uuidv4 } from "uuid";
+
+4. (Opcional pero recomendable) Instalar Axios
+
+Puedes usar fetch, pero muchos devs prefieren axios porque limpia bastante el código.
+
+Opcional:
+
+npm install axios
+
+Si estás aprendiendo useEffect, yo haría primero con fetch (mejor para entender asincronía).
+
+5. Instalar extensiones útiles (VS Code)
+
+No son obligatorias, pero sí recomendables.
+
+Instala estas:
+
+Imprescindibles
+ES7+ React/Redux/React-Native snippets
+Prettier
+ESLint
+Muy útiles
+Auto Rename Tag
+Path Intellisense
+Error Lens
+
+No son necesarias para que funcione, pero sí para trabajar cómodo.
+
+6. Levantar proyecto
+
+Arranca el entorno:
+
+npm run dev
+
+Eso levanta el servidor local (normalmente en localhost:5173).
+
+Si ves React funcionando, ya estás listo.
+
+7. Limpiar proyecto inicial
+
+Vite te crea archivos de ejemplo que no necesitas.
+
+Lo normal es limpiar:
+
+Borra lo que sobra
+App.css
+assets/react.svg
+Limpia index.css
+
+Déjalo básico.
+
+Limpia App.jsx
+
+Déjalo con un simple:
+
+function App() {
+  return <h1>Weather App</h1>;
+}
+
+export default App;
+
+Esto es solo para comprobar que todo arranca limpio.
+
+Resumen del setup inicial
+
+Orden correcto:
+
+npm create vite@latest weather-info
+cd weather-info
+npm install
+npm install uuid
+npm run dev
+
+Y luego limpiar boilerplate.
