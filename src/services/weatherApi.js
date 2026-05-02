@@ -15,7 +15,7 @@ export const getWeatherByCity = async (city) => { // Es async porque va a espera
         },
     })
 
-    console.log("RESPONSE COMPLETA:", response);
-    console.log("SOLO DATA:", response.data);
+    //console.log("RESPONSE COMPLETA:", response);
+    //console.log("SOLO DATA:", response.data);
     return response.data;
 }
