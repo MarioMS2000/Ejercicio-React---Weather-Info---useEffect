@@ -6,9 +6,11 @@ const SerchForm = ({ onSearch }) => {
     const handleSubmit = (e) => {
     e.preventDefault(); // Evitar que recargue la página
     
-    if (!search) return; // si esta vacío no hace nada
+    const searchValue = search.trim(); // Eliminamos espacios delante y detras en el input del buscador
 
-    onSearch(search);
+    if (!searchValue) return; // si esta vacío no hace nada
+
+    onSearch(searchValue);
 
     setSearch(""); // Limpiar input
     }
