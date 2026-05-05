@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import styles from "./SearchForm.module.css"; // CSS Module: estilos propios de SearchForm
 
 const SerchForm = ({ onSearch }) => {
     const [search, setSearch] = useState("");
@@ -16,10 +17,10 @@ const SerchForm = ({ onSearch }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={search} placeholder='escriba una ciudad' onChange={(e) => setSearch(e.target.value)}>
+        <form className={styles.searchForm} onSubmit={handleSubmit}>
+            <input className={styles.searchInput} type="text" value={search} placeholder='escriba una ciudad' onChange={(e) => setSearch(e.target.value)}>
             </input>
-            <button type="submit">SUBMIT</button> 
+            <button className={styles.searchButton} type="submit">SUBMIT</button> 
         </form>
     )
 }

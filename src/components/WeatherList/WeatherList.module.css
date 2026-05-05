@@ -1,0 +1,32 @@
+.weatherList {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.weatherListHeader {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.weatherListHeader h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.weatherGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .weatherListHeader {
+        text-align: left;
+    }
+
+    .weatherGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.25rem;
+    }
+}
