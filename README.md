@@ -2,6 +2,10 @@
 
 Aplicación hecha con **React + Vite** que muestra el pronóstico del tiempo usando la API de **OpenWeatherMap**.
 
+## 🌍 Demo desplegada
+
+👉 **[Ver la app en Netlify](https://ejercicio-react-weather-info-useefect.netlify.app/)**
+
 Al cargar la app, intenta obtener tu ubicación con el navegador. Si aceptas el permiso, muestra el clima de tu ubicación actual. Si lo rechazas o falla la geolocalización, carga por defecto el clima de **Madrid**. También puedes buscar manualmente cualquier ciudad desde el formulario.
 
 ---
